@@ -1,0 +1,460 @@
+﻿
+footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+.body1 {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #8E44AD, #9B59B6, #3498DB, #5DADE2) no-repeat fixed; /* Single gradient background */
+    background-size: cover; /* Ensure full coverage */
+    color: #fff; /* White text */
+    font-size: 18px; /* Increase the default font size */
+}.body2 {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #fff, #92d7ff, #23ddaa, #1bf10b) no-repeat fixed; /* Single gradient background */
+    background-size: cover; /* Ensure full coverage */
+    color: #fff; /* White text */
+    font-size: 18px; /* Increase the default font size */
+}.body3 {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #050000, #520707, #7c0a0a, #0d0968) no-repeat fixed; /* Single gradient background */
+    background-size: cover; /* Ensure full coverage */
+    color: #fff; /* White text */
+    font-size: 18px; /* Increase the default font size */
+}.body4 {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #fff, #cacaca, #5b5b5b, #000000) no-repeat fixed; /* Single gradient background */
+    background-size: cover; /* Ensure full coverage */
+    color: #fff; /* White text */
+    font-size: 18px; /* Increase the default font size */
+}.body5 {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #000000, #6a0990, #4c085c, #22084d) no-repeat fixed; /* Single gradient background */
+    background-size: cover; /* Ensure full coverage */
+    color: #fff; /* White text */
+    font-size: 18px; /* Increase the default font size */
+}.body6 {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #d16e0f, #bbb316, #c71111, #222) no-repeat fixed; /* Single gradient background */
+    background-size: cover; /* Ensure full coverage */
+    color: #fff; /* White text */
+    font-size: 18px; /* Increase the default font size */
+}
+
+/* Other styles remain unchanged */
+
+
+
+header {
+    background-color: #222; /* Darker blue header */
+    padding: 10px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #00f; /* Blue text */
+        font-weight: bold;
+        font-size: 16px;
+        padding: 8px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        nav a:hover {
+            background-color: #000; /* Dark blue hover background */
+        }
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Dark blue section background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #00f; /* Blue heading */
+}
+
+h2 {
+    color: #fff; /* White heading for Prices section */
+    font-size: 36px; /* Increase font size for Prices heading */
+    margin-bottom: 20px;
+}
+
+p {
+    color: #ccc; /* Light gray text */
+}
+
+.slider-container {
+    margin-top: 20px;
+}
+
+.slider-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #00f; /* Blue label text */
+}
+
+.slider {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    border-radius: 5px;
+    background: #222; /* Darker blue track background */
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #00f; /* Blue thumb color */
+        cursor: pointer;
+    }
+
+    .slider:-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #00f; /* Blue thumb color */
+        cursor: pointer;
+    }
+
+.amount-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #00f; /* Blue button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .amount-btn:hover {
+        background-color: #000; /* Dark blue hover background */
+    }
+
+.buy-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50; /* Green button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+}
+
+    .buy-button:hover {
+        background-color: #45a049; /* Darker green hover background */
+        box-shadow: 0 0 5px #888; /* Slightly grey box-shadow on hover */
+        text-decoration: none;
+    }
+
+    .buy-button:active {
+        background-color: #3d8e41; /* Even darker green when clicked */
+        box-shadow: 0 0 8px #666; /* Darker box-shadow when clicked */
+    }
+
+.prices-section {
+    margin-top: 30px;
+}
+/* Add these styles to your existing CSS file */
+
+body {
+    font-size: 120%; /* Increase the overall font size by 20% */
+}
+
+/* Increase the size of other elements as needed */
+#main-content {
+    font-size: 120%;
+    /* Add more styles for other elements if necessary */
+}
+
+/* Adjust the height of the navigation bar */
+.navbar {
+    height: 60px; /* Increase the height of the navigation bar */
+}
+
+/* Add more styles for the navigation bar if necessary */
+.marginclass2
+{
+    margin-left: 30px;
+}
+/* Add these styles for the new button class */
+.slayer-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #222; /* Dark grey color */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underlines from links */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 35%;
+    table-layout: fixed;
+}
+
+    .slayer-button:hover {
+        background-color: #fff; /* White color on hover */
+        color: #333; /* Dark grey text color on hover */
+    }
+<style >
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url("../Pics/X3.png");
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Main Content */
+#main-content {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.slayer-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slayer-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .slayer-button:hover {
+        background-color: #fff;
+        color: #333;
+    }
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.social-link {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: 80px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .slayer-button {
+        padding: 8px 16px;
+        margin: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        height: 100px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .slayer-button {
+        padding: 6px 12px;
+        margin: 6px;
+    }
+}
+
+/* Button styles */
+.discount-button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #fff;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+    .discount-button.checked {
+        background-color: #00f; /* Change the background color when checked */
+        color: #fff; /* Change the text color when checked */
+    }
+
+/* Dropdown styles */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-btn {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+    .dropdown-content button {
+        padding: 10px;
+        display: block;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        border: none;
+        background-color: #fff;
+        color: #333;
+    }
+
+        .dropdown-content button:hover {
+            background-color: #ddd;
+        }

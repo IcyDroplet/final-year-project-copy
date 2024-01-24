@@ -1,0 +1,107 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Css/StyleSheet1.css" rel="stylesheet" />
+    <title>Inferno - Hypixel Skyblock Slayers</title>
+</head>
+
+<body class="body6">
+    <header>
+        <nav>
+            <ul>
+                <!-- Add links for other slayer pages -->
+
+                <li><a href="Homepage.html">Home Page</a></li>
+                <li><a href="RevSlayer.html">Revenant Horror</a></li>
+                <li><a href="TaraSlayer.html">Tarantula Broodfather</a></li>
+                <li><a href="SvenSlayer.html">Sven Packmaster</a></li>
+                <li><a href="EmanSlayer.html">Voidgloom Seraph</a></li>
+                <li><a href="BlazeSlayer.html">Inferno Demonlord</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main-content">
+        <div class="slayer-info">
+            <h1>Inferno Demonlord Slayer</h1>
+            <p>You need a minimum of combat 20 to do RevSlayer. Otherwise, you cannot enter the End dimension.</p>
+        </div>
+
+        <div class="prices-section">
+            <h2>Prices</h2>
+            <!-- Additional content for prices goes here -->
+        </div>
+
+        <div class="slider-container">
+            <label class="slider-label">Select the amount of carries:</label>
+            <input type="range" min="1" max="200" value="1" class="slider" id="carryAmount" />
+            <p>Selected Amount: <span id="selectedAmount">1</span></p>
+            <p id="priceOutput">Price: $0.00</p>
+            <p id="pricePerCarryOutput">Price: $0.00</p>
+            <a href="https://discord.com/invite/536549369785352204" class="buy-button">Buy</a>
+        </div>
+    </section>
+    <!-- Add this updated script to your HTML file -->
+    <script>
+        var previousTotalPrice = 0; // Variable to store the previous total price
+
+        document.getElementById("carryAmount").addEventListener("input", function () {
+            var carryAmount = this.value;
+            var pricePerCarry = 6000000; // Assuming a base price per carry
+
+            var totalPrice = carryAmount * pricePerCarry;
+            var pricePerCarryDisplay = pricePerCarry; // Display the base price per carry
+            var currentPrice = previousTotalPrice || 0; // Start from the previous total price
+
+            var priceOutput = document.getElementById("priceOutput");
+            var pricePerCarryOutput = document.getElementById("pricePerCarryOutput");
+
+            // Calculate the step size based on the difference between current and target prices
+            var step = Math.abs(totalPrice - currentPrice) / 50; // Adjust the division factor for smoother or faster animation
+
+            // Determine the direction of the animation (increment or decrement)
+            var direction = (currentPrice < totalPrice) ? 1 : -1;
+
+            // Smooth animation for displaying the calculated price
+            var animationInterval = setInterval(function () {
+                if ((direction === 1 && currentPrice < totalPrice) || (direction === -1 && currentPrice > totalPrice)) {
+                    priceOutput.innerHTML = "Total Price: $" + formatNumber(currentPrice.toFixed(2));
+                    currentPrice += step * direction;
+                } else {
+                    priceOutput.innerHTML = "Total Price: $" + formatNumber(totalPrice.toFixed(2));
+                    clearInterval(animationInterval);
+                    previousTotalPrice = totalPrice; // Update the previous total price
+                }
+            }, 10); // Adjust the interval for smoother or faster animation
+
+            pricePerCarryOutput.innerHTML = "Price Per Carry: $" + formatNumber(pricePerCarryDisplay.toFixed(2));
+            document.getElementById("selectedAmount").innerHTML = carryAmount;
+        });
+
+        // Helper function to format numbers with commas for better readability
+        function formatNumber(number) {
+            return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+    </script>
+
+
+
+
+
+
+    <footer>
+        <p>Contact & Socials: <a href="mailto:saenqqq@gmail.com">saenqqq@gmail.com</a> | Phone: 0587716171 IL </p>
+        <div id="social-buttons">
+            <a class="marginclass2" href="https://Youtube.com" target="_blank"> <img src="../Pics/Youtube2.png" height="50" width="50" /></a>
+            <a class="marginclass2" href="https://twitter.com" target="_blank"><img src="../Pics/X3.png" height="50" width="50" /></a>
+            <a class="marginclass2" href="https://Discord.com" target="_blank"><img src="../Pics/disc1.png" height="50" width="50" /></a>
+        </div>
+    </footer>
+</body>
+
+</html>
